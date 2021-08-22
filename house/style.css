@@ -1,0 +1,102 @@
+
+body{
+    margin: 20%;
+    padding: 0;    
+    background-color: rgb(196, 194, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#house{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+#front{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+   grid-template-rows: 2fr 3fr;
+}
+.wall{
+    background:white;
+
+}
+.roof{
+  background:   linear-gradient(0deg
+, rgb(136, 219, 143) 10%,
+ rgb(4, 110, 39) 100%);
+
+}
+#front .triangle{
+    border-bottom: 118px solid white;
+    border-right: 90px solid #00800005;
+    border-left: 90px solid #00800000;
+}
+
+#front .roof{
+transform: skewX(-37deg) translateX(38%);
+
+}
+.sidewall{
+    background-color: rgb(243 243 243);;
+}
+#garage{
+    display: grid;
+    width: 120px;
+    height: 140px;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1.5fr 3fr;
+    transform: translateX(47px);
+}
+#garage .triangle{
+    border-bottom: 51px solid white;
+    border-left: 55px solid #00800000;
+}
+#garage .roof {
+    transform: skewX( 
+-48deg
+ ) translateX(44%);
+}
+#top-window{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: inline-block;
+    transform: translateY(-55px);
+    background-color: lightyellow;
+    border: 2px solid green;
+}
+#middle-window{
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+#middle-window::after , #middle-window::before{
+content: '';
+width: 40px;
+height: 40px;
+display: inline-block;
+background-color: lightyellow;
+border: 2px solid green;
+border-radius: 5px;
+}
+#door{
+content: '';
+display: inline-block;
+width: 50px;
+height: 80px;
+background: brown;
+border-top-left-radius: 45%;
+border-top-right-radius: 45%;
+transform: translateY(14px);
+}
+#front .wall{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
